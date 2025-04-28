@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Skills() {
   return (
-    <div className="w-full  min-h-[100vh] text-white bg-[#040428]">
+    <div className="w-full  min-h-[100vh] text-white bg-black">
       <div className="w-[90%] min-h-screen m-auto flex justify-center items-center flex-col gap-5">
         <h1 className=" capitalize font-bold text-2xl ">
           programming skills <hr className="mt-1"></hr>

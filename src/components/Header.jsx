@@ -1,4 +1,4 @@
-import React, { useState, lazy } from "react";
+import React, { useState, lazy, useRef } from "react";
 import { Link } from "react-router-dom";
 // framer-motion
 import { motion } from "framer-motion";
@@ -6,13 +6,23 @@ import { motion } from "framer-motion";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 // react-scroll
 import { Link as LinkTo } from "react-scroll";
+import { u } from "framer-motion/client";
 // components
 const Sidebar = lazy(() => import("./Sidebar"));
 
 export default function Header() {
   const [sideBar, setSidebar] = useState(false);
+  const ref = useRef();
+
+  const handle = (e) => {
+    
+  };
+
+  handle();
+
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.2, ease: "easeInOut" }}

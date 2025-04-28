@@ -11,7 +11,7 @@ import { FiShoppingBag } from "react-icons/fi";
 
 export default function Projects() {
   return (
-    <div className="w-full  min-h-[100vh] text-white bg-[#040428] ">
+    <div className="w-full  min-h-[100vh] text-white bg-black">
       <motion.h1
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}

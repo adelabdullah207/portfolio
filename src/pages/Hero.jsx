@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React, { lazy, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 // css
@@ -18,6 +18,9 @@ const Skills = lazy(() => import("./Skills"));
 
 export default function Hero() {
   const jobs = ["web-developer", "front-end", "software-engineer"];
+  const ref = useRef();
+  useEffect(() => {}, []);
+
   return (
     <>
       <div className=" overflow-hidden">

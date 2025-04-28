@@ -12,10 +12,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/portfolio" element={<Hero />}></Route>
+          <Route path="/" element={<Hero />}></Route>
           <Route path="*" element={<_404_ />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </>
   );

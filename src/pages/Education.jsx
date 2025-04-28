@@ -36,9 +36,7 @@ export default function Education() {
             <iframe
               className="w-full h-[60vh]  rounded-md outline-none"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27327.77767633096!2d33.68410175164061!3d31.11050443099369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fc299dea1f80cf%3A0x801951620eae76fa!2sSinai%20University%20(Arish%20Branch)!5e0!3m2!1sen!2seg!4v1744807899874!5m2!1sen!2seg"
-              allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
             />
           </motion.div>
         </motion.div>

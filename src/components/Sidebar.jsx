@@ -14,13 +14,13 @@ export default function Sidebar() {
       exit={{ x: -1000 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
       id="sidebar"
-      className="w-[70%] bg-gray-800 h-screen fixed top-0 left-0  z-40  flex flex-col justify-between py-3.5"
+      className="w-[70%] h-screen bg-gray-800  fixed top-0 left-0  z-40  flex flex-col justify-between py-3.5"
     >
       <span className="w-full flex flex-col justify-center items-center gap-2">
         <img
           src="./me-image.webp"
           alt="author"
-          className="w-50 h-50  rounded-full object-cover hover:scale-95 transition-all duration-150 ease-in-out cursor-pointer"
+          className="w-24 h-24  rounded-full object-cover hover:scale-95 transition-all duration-150 ease-in-out cursor-pointer"
         />
         <h1 className="text-white capitalize text-4xl">adel abdullah</h1>
         <h2 className="text-white capitalize bg-gray-700 p-2 rounded-md">
