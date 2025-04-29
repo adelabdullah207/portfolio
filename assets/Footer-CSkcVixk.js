@@ -1,1 +1,0 @@
-import{j as e}from"./index-A0fAkJvd.js";function a(){return e.jsxs("div",{className:"bg-[#040428] text-white text-center p-4 capitalize font-bold",children:["created by ",e.jsx("span",{className:" animate-pulse text-red-500",children:"♥ "}),"by adel abdullah"]})}export{a as default};
