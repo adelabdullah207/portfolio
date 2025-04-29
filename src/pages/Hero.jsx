@@ -26,7 +26,7 @@ export default function Hero() {
       <div className=" overflow-hidden">
         <div className="min-h-screen bg-[url('./back.jpg')] bg-cover bg-top bg-no-repeat bg-fixed">
           <Header />
-          <div className=" bg-cover bg-center   w-full min-h-[90vh] text-white flex md:flex-row flex-col-reverse md:gap-0 gap-5 justify-center items-center">
+          <div className=" bg-cover bg-center flex-col   w-full min-h-[90vh] text-white flex  md:gap-0 gap-5 justify-center items-center">
             {/* left-side */}
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -85,7 +85,6 @@ export default function Hero() {
         <Element name="skills" className="w-full h-full">
           <Skills />
         </Element>
-        
       </div>
     </>
   );
