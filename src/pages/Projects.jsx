@@ -11,7 +11,7 @@ import { FiShoppingBag } from "react-icons/fi";
 
 export default function Projects() {
   return (
-    <div className="w-full  min-h-[100vh] text-white bg-black">
+    <div className="w-full  min-h-[100vh] text-white bg-[url('./back.jpg')]  bg-cover bg-fixed bg-top">
       <motion.h1
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export default function Projects() {
           className="vertical-timeline-element--work"
           date="First project"
           iconStyle={{
-            background: "#eb944c",
+            background: "#32163f",
           }}
           icon={<MdOutlineCardTravel />}
         >
@@ -55,7 +55,7 @@ export default function Projects() {
           className="vertical-timeline-element--work"
           date="Second project"
           iconStyle={{
-            background: "#eb944c",
+            background: "#32163f",
           }}
           icon={<FiShoppingBag />}
         >
@@ -96,7 +96,7 @@ const customerStyle = {
   customLine: "text-black opacity-10",
   customOuterDiv: "group w-full h-full relative overflow-hidden rounded-md",
   customInnerDiv:
-    "flex justify-center items-center -z-30 group-hover:z-50 cursor-pointer absolute -bottom-10 left-0 w-full h-full bg-black/25 group-hover:bottom-0 opacity-25 group-hover:opacity-100 transition-all duration-200",
+    "flex justify-center items-center -z-30 group-hover:z-50 cursor-pointer absolute -bottom-10 left-0 w-full h-full bg-black/10 group-hover:bottom-0 opacity-25 group-hover:opacity-100 transition-all duration-200",
   customButton:
-    " capitalize cursor-pointer bg-[#eb944c] p-2 rounded-md hover:scale-125 transition-all duration-200",
+    "capitalize cursor-pointer bg-[#32163f] p-2 rounded-md hover:scale-125 transition-all duration-200",
 };

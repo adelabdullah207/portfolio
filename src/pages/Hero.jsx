@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <>
       <div className=" overflow-hidden">
-        <div className="min-h-screen bg-[url('https://img.freepik.com/free-vector/gradient-connection-background_23-2150462053.jpg?t=st=1744805977~exp=1744809577~hmac=6de1cb7b6db20c77506b451fc5d039a1d21815154f6e25a33aeef8ecf28c46d0&w=1380')] bg-cover bg-center bg-no-repeat bg-fixed">
+        <div className="min-h-screen bg-[url('./back.jpg')] bg-cover bg-top bg-no-repeat bg-fixed">
           <Header />
           <div className=" bg-cover bg-center   w-full min-h-[90vh] text-white flex md:flex-row flex-col-reverse md:gap-0 gap-5 justify-center items-center">
             {/* left-side */}
@@ -85,6 +85,7 @@ export default function Hero() {
         <Element name="skills" className="w-full h-full">
           <Skills />
         </Element>
+        
       </div>
     </>
   );

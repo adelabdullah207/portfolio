@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div className="text-white bg-[url('https://img.freepik.com/free-vector/gradient-connection-background_23-2150462053.jpg?t=st=1744805977~exp=1744809577~hmac=6de1cb7b6db20c77506b451fc5d039a1d21815154f6e25a33aeef8ecf28c46d0&w=1380')] min-h-[100vh] bg-cover bg-center bg-no-repeat w-full bg-fixed flex flex-col justify-center items-center">
+    <div className="text-white bg-[url('./back.jpg')] min-h-[100vh] bg-cover bg-top bg-no-repeat w-full bg-fixed flex flex-col justify-center items-center">
       <div className="flex justify-center items-center flex-col lg:flex-row w-[90%] gap-10 p-5">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
