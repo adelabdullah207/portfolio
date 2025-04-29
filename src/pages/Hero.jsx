@@ -8,7 +8,7 @@ import "../styles/hero.css";
 import { ReactTyped } from "react-typed";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { Link, Element } from "react-scroll";
+import { Element } from "react-scroll";
 
 // components
 const Header = lazy(() => import("../components/Header"));
