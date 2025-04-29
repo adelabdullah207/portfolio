@@ -67,12 +67,12 @@ export default function Hero() {
               transition={{ ease: "easeInOut", duration: 0.5 }}
               className="flex justify-center w-1/2"
             >
-              <img
+              {/* <img
                 loading="lazy"
                 src="./me.png"
                 alt="adel"
                 className="hover:animate-pulse lg:w-96 lg:h-96 w-48 h-48 rounded-full hover:scale-105 duration-200 transition-all"
-              />
+              /> */}
             </motion.div>
           </div>
         </div>
