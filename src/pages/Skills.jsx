@@ -10,9 +10,9 @@ export default function Skills() {
         </h1>
         {/* skills */}
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5, ease: "easeInOut" }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           className="w-full h-full flex justify-center items-center flex-col gap-5"
         >
           {/* skill */}
@@ -20,7 +20,7 @@ export default function Skills() {
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: "98%" }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
               className={customerStyle.customProgressBar}
             >
               <span className={customerStyle.customProgressLanguage}>html</span>
@@ -34,7 +34,7 @@ export default function Skills() {
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: "95%" }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
               className={customerStyle.customProgressBar}
             >
               <span className={customerStyle.customProgressLanguage}>css</span>
@@ -48,7 +48,7 @@ export default function Skills() {
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: "97%" }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
               className={customerStyle.customProgressBar}
             >
               <span className={customerStyle.customProgressLanguage}>
