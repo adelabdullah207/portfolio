@@ -1,0 +1,1 @@
+import{r as t,j as e}from"./index-DTjrg3dG.js";function r(){return t.useEffect(()=>{setDate(currentYear)}),e.jsxs("div",{className:"bg-[#040428] text-white text-center p-4 capitalize font-bold",children:["created by ",e.jsx("span",{className:" animate-pulse text-red-500",children:"♥ "}),"by adel abdullah"]})}export{r as default};
