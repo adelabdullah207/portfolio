@@ -26,7 +26,7 @@ export default function Hero() {
       <div className=" overflow-hidden">
         <div className="min-h-screen bg-[url('./back.jpg')] bg-cover bg-top bg-no-repeat bg-fixed">
           <Header />
-          <div className=" bg-cover bg-center flex-col   w-full min-h-[90vh] text-white flex  md:gap-0 gap-5 justify-center items-center">
+          <div className=" bg-cover bg-center flex-col w-full min-h-[90vh] text-white flex  md:gap-0 gap-5 justify-center items-center">
             {/* left-side */}
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -69,7 +69,7 @@ export default function Hero() {
             >
               <img
                 loading="lazy"
-                src="./me.jpg"
+                src="./me.png"
                 alt="adel"
                 className="hover:animate-pulse lg:w-96 lg:h-96 w-48 h-48 rounded-full hover:scale-105 duration-200 transition-all"
               />
