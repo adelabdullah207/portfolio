@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 // icons
 import { AiOutlineMenuUnfold } from "react-icons/ai";
+import { FaWindowClose } from "react-icons/fa";
 // react-scroll
 import { Link as LinkTo } from "react-scroll";
-import { u } from "framer-motion/client";
+import { div, u } from "framer-motion/client";
 // components
 const Sidebar = lazy(() => import("./Sidebar"));
 
@@ -15,14 +16,16 @@ export default function Header() {
   const ref = useRef();
 
   const handle = (e) => {
-    
+    if (e.target === ref.current) {
+      setSidebar(!sideBar);
+    }
   };
-
-  handle();
+  
 
   return (
     <motion.div
       ref={ref}
+      
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.2, ease: "easeInOut" }}
@@ -48,14 +51,26 @@ export default function Header() {
         <LinkTo to="education" smooth={true} duration={1000}>
           <li className={customerStyle.customLi}>education</li>
         </LinkTo>
-        <LinkTo to={"skills"} smooth={true} duration={1500}>
+        <LinkTo to="skills" smooth={true} duration={1500}>
           <li className={customerStyle.customLi}>skills</li>
         </LinkTo>
       </ul>
 
       {/* mobile icon */}
       <div className="text-white flex md:hidden cursor-pointer">
-        <AiOutlineMenuUnfold onClick={() => setSidebar(!sideBar)} size={35} />
+        {sideBar ? (
+          <FaWindowClose
+            className="hover:text-red-500 transition-all duration-150"
+            onClick={() => setSidebar(!sideBar)}
+            size={35}
+          />
+        ) : (
+          <AiOutlineMenuUnfold
+            className="text-gray-400 hover:text-white transition-all duration-150"
+            onClick={() => setSidebar(!sideBar)}
+            size={35}
+          />
+        )}
         {sideBar && <Sidebar />}
       </div>
     </motion.div>

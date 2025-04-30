@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 // icons
 import { MdOutlineCardTravel } from "react-icons/md";
 import { FiShoppingBag } from "react-icons/fi";
+import { FaWindowClose } from "react-icons/fa";
 
 export default function Projects() {
   return (
@@ -20,6 +21,7 @@ export default function Projects() {
         Projects
       </motion.h1>
       <VerticalTimeline lineColor="white" className="w-full h-full">
+        {/* first project */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="First project"
@@ -51,6 +53,7 @@ export default function Projects() {
             </div>
           </div>
         </VerticalTimelineElement>
+        {/* second project */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="Second project"
@@ -62,6 +65,39 @@ export default function Projects() {
           <div className={customerStyle.customOuterDiv}>
             <div>
               <h3 className={customerStyle.customHead3}>E-commerce</h3>
+              <hr className={customerStyle.customLine} />
+
+              <img
+                loading="lazy"
+                src="/projects/e-commerce.png"
+                alt="E-commerce"
+                className={customerStyle.customImage}
+              />
+            </div>
+            <div className={customerStyle.customInnerDiv}>
+              <a
+                href="https://adelabdullah207.github.io/ecommerce-app"
+                target="_blank"
+              >
+                <button className={customerStyle.customButton}>
+                  live preview
+                </button>
+              </a>
+            </div>
+          </div>
+        </VerticalTimelineElement>
+        {/* third project */}
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Second project"
+          iconStyle={{
+            background: "#32163f",
+          }}
+          icon={<FiShoppingBag />}
+        >
+          <div className={customerStyle.customOuterDiv}>
+            <div>
+              <h3 className={customerStyle.customHead3}>Sky High</h3>
               <hr className={customerStyle.customLine} />
 
               <img

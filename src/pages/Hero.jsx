@@ -25,7 +25,9 @@ export default function Hero() {
     <>
       <div className=" overflow-hidden">
         <div className="min-h-screen bg-[url('./back.jpg')] bg-cover bg-top bg-no-repeat bg-fixed">
-          <Header />
+          <Element name="header">
+            <Header />
+          </Element>
           <div className=" bg-cover bg-center flex-col w-full min-h-[90vh] text-white flex  md:gap-0 gap-5 justify-center items-center">
             {/* left-side */}
             <motion.div
